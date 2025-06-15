@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goli.com - نسخه اضطراری</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🌐 Goli.com - نسخه اضطراری</h1>
+        <nav>
+            <a href="#notices">اطلاعیه‌ها</a>
+            <a href="#guides">گام‌به‌گام‌ها</a>
+            <a href="#register">پیش‌ثبت‌نام</a>
+            <a href="#tweets">پیام‌های دانش‌آموزان</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="notices">
+            <h2>📢 اطلاعیه‌ها</h2>
+            <ul>
+                <li>سایت Goli.com به دلیل وضعیت بحرانی فقط به صورت موقت فعال است.</li>
+                <li>فقط بخش‌های اطلاعیه، گام‌به‌گام و پیام دانش‌آموزان فعال هستند.</li>
+                <li>اطلاعات بعدی از طریق همین صفحه اعلام خواهد شد.</li>
+            </ul>
+        </section>
+
+        <section id="guides">
+            <h2>📚 گام‌به‌گام‌ها</h2>
+            <a href="/downloads/math_guide.pdf" class="file-link">📄 گام‌به‌گام ریاضی هشتم</a>
+            <a href="/downloads/science_guide.pdf" class="file-link">📄 گام‌به‌گام علوم هشتم</a>
+        </section>
+
+        <section id="register">
+            <h2>📝 پیش‌ثبت‌نام کلاس‌ها</h2>
+            <p>ثبت‌نام نهایی پس از پایدار شدن شرایط اعلام خواهد شد.</p>
+            <form action="/register" method="post">
+                <label>نام و نام خانوادگی: <input type="text" name="fullname" required></label><br><br>
+                <label>کلاس مورد نظر: <input type="text" name="class" required></label><br><br>
+                <button type="submit">ثبت‌نام</button>
+            </form>
+        </section>
+
+        <section id="tweets">
+            <h2>💬 پیام‌های دانش‌آموزان</h2>
+            <form action="/tweet" method="post">
+                <label>نام شما: <input type="text" name="name" required></label><br><br>
+                <label>پیام شما: <textarea name="message" rows="3" required></textarea></label><br><br>
+                <button type="submit">ارسال پیام</button>
+            </form>
+            <div class="tweets">
+                <p><strong>رضا:</strong> کلاس‌ها خیلی خوب بود، لطفاً ادامه بدید!</p>
+                <p><strong>نگار:</strong> ممنون از گام‌به‌گام‌ها، خیلی کمک کرد 🙏</p>
+                <!-- پیام‌های دیگر به‌صورت داینامیک افزوده می‌شوند -->
+            </div>
+        </section>
+
+        <div class="login-box">
+            <h3>🔒 ورود مدیر سایت</h3>
+            <form action="/admin-login" method="post">
+                <label>نام کاربری: <input type="text" name="username" required></label><br><br>
+                <label>رمز عبور: <input type="password" name="password" required></label><br><br>
+                <button type="submit">ورود</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        نسخه اضطراری | طراحی شده توسط G.L.C. - Amirhossein Goli © 2025
+    </footer>
+</body>
+</html>
